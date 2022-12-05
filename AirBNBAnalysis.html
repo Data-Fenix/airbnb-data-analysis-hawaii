@@ -1,0 +1,4603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>de44b56eba654a9eb1b4c258667cf599</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="airbnb-data-analytics-project-1-load-data-and-basic-statistics" class="cell markdown" id="mbewjMndVNuD">
+<h1>AirBNB Data Analytics Project 1: Load Data and Basic Statistics</h1>
+</section>
+<div class="cell markdown" id="Uxu8PtckVNuG">
+<p>In this notebook we will download airbnb data and You will:</p>
+<ul>
+<li>Use python functions to compute important summary statistics</li>
+<li>Derive insights from the dataset to extract important features</li>
+<li>Report basic statistics like mean, standard deviation, range, max, min, percentiles for features.</li>
+<li>use histogram, pie chart etc. to visualize the data</li>
+</ul>
+<p>In this notebook you will be provided with some already complete code as well as some code that you should complete yourself to finish Project 1. The code we provide to complte is optional and is there to assist you with solving the problems but feel free to ignore the helper code and write your own.</p>
+</div>
+<section id="download-data" class="cell markdown" id="UovdyTO6VNuH">
+<h2>Download Data</h2>
+</section>
+<div class="cell markdown" id="uOc-agGyVNuI">
+<p>There are many ways to download data from Airbnb.com. Our group has tried to download the data using web scrapping tool directly from the website (this works for all areas that airbnb has services) and also tried to download data from insideairbnb.com (limited region only). Please feel free to explore new ways that are unknown to us and focus on the area for your project only for the analysis.</p>
+<p>If you are assigned analysis work for our clients in one of the regions that is supported by insideairbnb.com, it is suggested to use data set there since the data is well structured and easier to implement.</p>
+<p>There are four main data tables:</p>
+<ul>
+<li>listings - Detailed listings data showing ~100 attributes for each of the listings. Some of the attributes used in the analysis are price(continuous), longitude (continuous), latitude (continuous), listing_type (categorical), is_superhost (categorical), neighbourhood (categorical), ratings (continuous) among others.</li>
+<li>reviews - Detailed reviews given by the guests. Key attributes include date (datetime), listing_id (discrete), reviewer_id (discrete) and comment (textual).</li>
+<li>calendar - Provides details about booking for the next year by listing. Four attributes in total including listing_id (discrete), date(datetime), available (categorical) and price (continuous).</li>
+<li>neighborhood information - Provide basic neighborhood information.</li>
+</ul>
+</div>
+<div class="cell code" data-execution_count="4" id="c6eLa8FYVNuJ">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div>
+</div>
+<div class="cell markdown" id="TUSK1waKVNuL">
+<p>Reading in listings data</p>
+</div>
+<div class="cell code" data-execution_count="10" data-colab="{&quot;height&quot;:699,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="Iyb1bKdOVNuM" data-outputId="5ef9b0ae-5ed2-486f-86ed-a1a1420304d6">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>listings <span class="op">=</span> pd.read_csv(<span class="st">&#39;listings.csv.gz&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>listings.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+
+  <div id="df-8579e8bf-7954-4f9c-abb6-d5211b37a680">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>listing_url</th>
+      <th>scrape_id</th>
+      <th>last_scraped</th>
+      <th>source</th>
+      <th>name</th>
+      <th>description</th>
+      <th>neighborhood_overview</th>
+      <th>picture_url</th>
+      <th>host_id</th>
+      <th>...</th>
+      <th>review_scores_communication</th>
+      <th>review_scores_location</th>
+      <th>review_scores_value</th>
+      <th>license</th>
+      <th>instant_bookable</th>
+      <th>calculated_host_listings_count</th>
+      <th>calculated_host_listings_count_entire_homes</th>
+      <th>calculated_host_listings_count_private_rooms</th>
+      <th>calculated_host_listings_count_shared_rooms</th>
+      <th>reviews_per_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35066424</td>
+      <td>https://www.airbnb.com/rooms/35066424</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Spacious 3 Bedroom 3 Bath + Loft at Alii Cove</td>
+      <td>Largest 3 Bedroom 3 bath at Alii Cove across f...</td>
+      <td>It's summer time all year long! Beautiful Kona...</td>
+      <td>https://a0.muscache.com/pictures/0d072215-a1d1...</td>
+      <td>264152810</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>4.50</td>
+      <td>NaN</td>
+      <td>f</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>34843927</td>
+      <td>https://www.airbnb.com/rooms/34843927</td>
+      <td>20220912200136</td>
+      <td>2022-09-12</td>
+      <td>city scrape</td>
+      <td>Simply Paradise Glamping</td>
+      <td>Won·der:  a feeling of surprise mingled with a...</td>
+      <td>Located in historic Holualoa and just a short ...</td>
+      <td>https://a0.muscache.com/pictures/miso/Hosting-...</td>
+      <td>262664392</td>
+      <td>...</td>
+      <td>4.61</td>
+      <td>4.66</td>
+      <td>4.49</td>
+      <td>NaN</td>
+      <td>t</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5.90</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>35067513</td>
+      <td>https://www.airbnb.com/rooms/35067513</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Noah’s Hideaway Maui, Luxury B&amp;B, Walk to Beach!</td>
+      <td>PRIVATE AND SECLUDED: Noah's Hideaway, a Luxur...</td>
+      <td>We live in a tropical oasis, our own little pa...</td>
+      <td>https://a0.muscache.com/pictures/miso/Hosting-...</td>
+      <td>264162605</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>4.99</td>
+      <td>4.93</td>
+      <td>440090330000, TA-197-216-9216-01</td>
+      <td>t</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>35069027</td>
+      <td>https://www.airbnb.com/rooms/35069027</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Private Beach Suite</td>
+      <td>Best location in all NS&lt;br /&gt;Quiet, safe, frie...</td>
+      <td>NaN</td>
+      <td>https://a0.muscache.com/pictures/cd562c88-2744...</td>
+      <td>38304048</td>
+      <td>...</td>
+      <td>4.88</td>
+      <td>5.00</td>
+      <td>4.88</td>
+      <td>GE-095- 995-512-01R</td>
+      <td>f</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>34857616</td>
+      <td>https://www.airbnb.com/rooms/34857616</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Point at Poipu Resort- 2 bedrooms garden view</td>
+      <td>Drenched in radiant island sunshine, The Point...</td>
+      <td>NaN</td>
+      <td>https://a0.muscache.com/pictures/d4125003-41be...</td>
+      <td>31214940</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>280210010000, TA-148-664-9856-01</td>
+      <td>f</td>
+      <td>31</td>
+      <td>10</td>
+      <td>21</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 75 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8579e8bf-7954-4f9c-abb6-d5211b37a680')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8579e8bf-7954-4f9c-abb6-d5211b37a680 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8579e8bf-7954-4f9c-abb6-d5211b37a680');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="IWEKRvtNHYpc">
+<p>Reading the 'calender' dataset</p>
+</div>
+<div class="cell code" data-execution_count="5" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="aYMoCS5liGsg" data-outputId="643032fd-1d54-4a43-afdf-e4d9c2e2f16d">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>calendar <span class="op">=</span> pd.read_csv(<span class="st">&#39;calendar.csv.gz&#39;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>calendar.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+
+  <div id="df-da29209a-d447-4392-a695-5a27374ca308">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>listing_id</th>
+      <th>date</th>
+      <th>available</th>
+      <th>price</th>
+      <th>adjusted_price</th>
+      <th>minimum_nights</th>
+      <th>maximum_nights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35066424</td>
+      <td>2022-09-13</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>35066424</td>
+      <td>2022-09-14</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>35066424</td>
+      <td>2022-09-15</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>35066424</td>
+      <td>2022-09-16</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>35066424</td>
+      <td>2022-09-17</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-da29209a-d447-4392-a695-5a27374ca308')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-da29209a-d447-4392-a695-5a27374ca308 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-da29209a-d447-4392-a695-5a27374ca308');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="ImWWILfnHg6b">
+<p>Reading the 'reviews' dataset</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="2Cw2jyZRjMgG" data-outputId="1008bcab-d389-42d4-9e2e-001a7b2d45c0">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>reviews <span class="op">=</span> pd.read_csv(<span class="st">&#39;reviews.csv.gz&#39;</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>reviews.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+
+  <div id="df-c516e2b2-1bbf-4a5b-bec4-51098f4b4037">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>listing_id</th>
+      <th>id</th>
+      <th>date</th>
+      <th>reviewer_id</th>
+      <th>reviewer_name</th>
+      <th>comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>34843927</td>
+      <td>585561271</td>
+      <td>2019-12-31</td>
+      <td>56285682</td>
+      <td>Eric</td>
+      <td>I truly felt the “Aloha Hospitality” here!  Ju...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>34843927</td>
+      <td>589316569</td>
+      <td>2020-01-05</td>
+      <td>149607043</td>
+      <td>Vanessa</td>
+      <td>Wow vraiment beau et propre! Nous n'avons que ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>34843927</td>
+      <td>589852238</td>
+      <td>2020-01-06</td>
+      <td>160618306</td>
+      <td>Ryan</td>
+      <td>Thanks for the accommodations was a safe comfo...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>34843927</td>
+      <td>590205146</td>
+      <td>2020-01-07</td>
+      <td>250306395</td>
+      <td>Mollie</td>
+      <td>Beautiful star gazing. Cool tent. A little har...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>34843927</td>
+      <td>590886527</td>
+      <td>2020-01-09</td>
+      <td>310087862</td>
+      <td>William</td>
+      <td>We really enjoyed our stay. The balcony with t...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c516e2b2-1bbf-4a5b-bec4-51098f4b4037')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c516e2b2-1bbf-4a5b-bec4-51098f4b4037 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c516e2b2-1bbf-4a5b-bec4-51098f4b4037');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="pu4Il1tmjt_R" data-outputId="46ba663a-e4f1-447a-cd60-95a16ac4b1b9">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>reviews.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>(926310, 6)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="2k_SLaBYINXT">
+<p>Reading the 'neighbourhoods' dataset</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="6g3sUaTYbyUz" data-outputId="fff9be03-02d7-464a-8a3d-d66d7358341a">
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>neighbourhoods <span class="op">=</span> pd.read_csv(<span class="st">&#39;neighbourhoods.csv&#39;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>neighbourhoods.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+
+  <div id="df-ea01a761-8201-42da-b650-437d8f670f26">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>neighbourhood_group</th>
+      <th>neighbourhood</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Hawaii</td>
+      <td>Hamakua</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Hawaii</td>
+      <td>Kau</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Hawaii</td>
+      <td>North Hilo</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Hawaii</td>
+      <td>North Kohala</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Hawaii</td>
+      <td>North Kona</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ea01a761-8201-42da-b650-437d8f670f26')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ea01a761-8201-42da-b650-437d8f670f26 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ea01a761-8201-42da-b650-437d8f670f26');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="GIwkgGAmVNuN">
+<p>show the first 5 rows of the data in the listing dataset.</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:699,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="-pdaEGQRY9eM" data-outputId="5b06bd4c-cb3b-4455-f3e8-87a348d086b1">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>listings.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="53">
+
+  <div id="df-60db792d-143e-4cd7-a618-c55989577b7a">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>listing_url</th>
+      <th>scrape_id</th>
+      <th>last_scraped</th>
+      <th>source</th>
+      <th>name</th>
+      <th>description</th>
+      <th>neighborhood_overview</th>
+      <th>picture_url</th>
+      <th>host_id</th>
+      <th>...</th>
+      <th>review_scores_communication</th>
+      <th>review_scores_location</th>
+      <th>review_scores_value</th>
+      <th>license</th>
+      <th>instant_bookable</th>
+      <th>calculated_host_listings_count</th>
+      <th>calculated_host_listings_count_entire_homes</th>
+      <th>calculated_host_listings_count_private_rooms</th>
+      <th>calculated_host_listings_count_shared_rooms</th>
+      <th>reviews_per_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35066424</td>
+      <td>https://www.airbnb.com/rooms/35066424</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Spacious 3 Bedroom 3 Bath + Loft at Alii Cove</td>
+      <td>Largest 3 Bedroom 3 bath at Alii Cove across f...</td>
+      <td>It's summer time all year long! Beautiful Kona...</td>
+      <td>https://a0.muscache.com/pictures/0d072215-a1d1...</td>
+      <td>264152810</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>4.50</td>
+      <td>NaN</td>
+      <td>f</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>34843927</td>
+      <td>https://www.airbnb.com/rooms/34843927</td>
+      <td>20220912200136</td>
+      <td>2022-09-12</td>
+      <td>city scrape</td>
+      <td>Simply Paradise Glamping</td>
+      <td>Won·der:  a feeling of surprise mingled with a...</td>
+      <td>Located in historic Holualoa and just a short ...</td>
+      <td>https://a0.muscache.com/pictures/miso/Hosting-...</td>
+      <td>262664392</td>
+      <td>...</td>
+      <td>4.61</td>
+      <td>4.66</td>
+      <td>4.49</td>
+      <td>NaN</td>
+      <td>t</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5.90</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>35067513</td>
+      <td>https://www.airbnb.com/rooms/35067513</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Noah’s Hideaway Maui, Luxury B&amp;B, Walk to Beach!</td>
+      <td>PRIVATE AND SECLUDED: Noah's Hideaway, a Luxur...</td>
+      <td>We live in a tropical oasis, our own little pa...</td>
+      <td>https://a0.muscache.com/pictures/miso/Hosting-...</td>
+      <td>264162605</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>4.99</td>
+      <td>4.93</td>
+      <td>440090330000, TA-197-216-9216-01</td>
+      <td>t</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>35069027</td>
+      <td>https://www.airbnb.com/rooms/35069027</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Private Beach Suite</td>
+      <td>Best location in all NS&lt;br /&gt;Quiet, safe, frie...</td>
+      <td>NaN</td>
+      <td>https://a0.muscache.com/pictures/cd562c88-2744...</td>
+      <td>38304048</td>
+      <td>...</td>
+      <td>4.88</td>
+      <td>5.00</td>
+      <td>4.88</td>
+      <td>GE-095- 995-512-01R</td>
+      <td>f</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>34857616</td>
+      <td>https://www.airbnb.com/rooms/34857616</td>
+      <td>20220912200136</td>
+      <td>2022-09-13</td>
+      <td>city scrape</td>
+      <td>Point at Poipu Resort- 2 bedrooms garden view</td>
+      <td>Drenched in radiant island sunshine, The Point...</td>
+      <td>NaN</td>
+      <td>https://a0.muscache.com/pictures/d4125003-41be...</td>
+      <td>31214940</td>
+      <td>...</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>280210010000, TA-148-664-9856-01</td>
+      <td>f</td>
+      <td>31</td>
+      <td>10</td>
+      <td>21</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 75 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-60db792d-143e-4cd7-a618-c55989577b7a')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-60db792d-143e-4cd7-a618-c55989577b7a button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-60db792d-143e-4cd7-a618-c55989577b7a');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="5sV66DACZP2S" data-outputId="6bf4141e-dffe-43d8-afc8-05e8b75f56d8">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Shape of the dataset</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>listings.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="54">
+<pre><code>(28580, 75)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="Vui0PD98VNuO">
+<p>print all the columns in the listings data to get familiar with the data</p>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="u79J0OHTVNuP" data-outputId="a2341b38-2015-418f-e980-4e5acd217fc9" data-scrolled="false">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> listings.columns:</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(col)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>id
+listing_url
+scrape_id
+last_scraped
+source
+name
+description
+neighborhood_overview
+picture_url
+host_id
+host_url
+host_name
+host_since
+host_location
+host_about
+host_response_time
+host_response_rate
+host_acceptance_rate
+host_is_superhost
+host_thumbnail_url
+host_picture_url
+host_neighbourhood
+host_listings_count
+host_total_listings_count
+host_verifications
+host_has_profile_pic
+host_identity_verified
+neighbourhood
+neighbourhood_cleansed
+neighbourhood_group_cleansed
+latitude
+longitude
+property_type
+room_type
+accommodates
+bathrooms
+bathrooms_text
+bedrooms
+beds
+amenities
+price
+minimum_nights
+maximum_nights
+minimum_minimum_nights
+maximum_minimum_nights
+minimum_maximum_nights
+maximum_maximum_nights
+minimum_nights_avg_ntm
+maximum_nights_avg_ntm
+calendar_updated
+has_availability
+availability_30
+availability_60
+availability_90
+availability_365
+calendar_last_scraped
+number_of_reviews
+number_of_reviews_ltm
+number_of_reviews_l30d
+first_review
+last_review
+review_scores_rating
+review_scores_accuracy
+review_scores_cleanliness
+review_scores_checkin
+review_scores_communication
+review_scores_location
+review_scores_value
+license
+instant_bookable
+calculated_host_listings_count
+calculated_host_listings_count_entire_homes
+calculated_host_listings_count_private_rooms
+calculated_host_listings_count_shared_rooms
+reviews_per_month
+</code></pre>
+</div>
+</div>
+<section id="understand-the-data-and-start-doing-analysis" class="cell markdown" id="jB6IN9OtVNuP">
+<h1>Understand the data and start doing analysis:</h1>
+</section>
+<div class="cell markdown" id="pTNrNnEdVNuP">
+<p>To analyze the data to generate insights, we have to pre-process and aggregate the data to generate summary table for listings for our analytical purposes. Here are a couple of ideas if you are not already familiar with residential real estate:</p>
+<ul>
+<li>For any real estate, the most important things are location, location, location! look at city, zipcode, neighbourhood_cleansed and other related columns to get an idea about the location.</li>
+<li>room_type and property_type are both important since it gives information about the property and how it rents on AirBNB. For our client's purposes, you can focus on Entire home/apt for room_type and in most of the cases, you can research House only.</li>
+<li>accommodates, bathrooms, beds, bed_type are important columns about sleeping capacity.</li>
+<li>square_feet is important columns related to hosting price.</li>
+<li>price, security_deposit, cleaning_fee are sensitive information for guests.</li>
+<li>minimum)nights and maximum_nights are important information about the hosting.</li>
+<li>other columns like review_scores_rating, cancellation_policy, reviews_per_month, number_of_reviews, number_of_reviews_itm etc are also important factors for guests to decide which property to stat at.</li>
+</ul>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:713,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="hcrKmIhWVNuQ" data-outputId="db1281ae-86a6-4422-fa2b-cb24c2f99d30">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and analysis here#</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">#selecting the above mentioned columns from the dataset.</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>listings[[<span class="st">&#39;neighbourhood&#39;</span>, <span class="st">&#39;neighbourhood_cleansed&#39;</span>,<span class="st">&#39;latitude&#39;</span>, <span class="st">&#39;longitude&#39;</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;property_type&#39;</span>, <span class="st">&#39;room_type&#39;</span>, <span class="st">&#39;accommodates&#39;</span>, <span class="st">&#39;bathrooms&#39;</span>, <span class="st">&#39;bedrooms&#39;</span>, <span class="st">&#39;beds&#39;</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;price&#39;</span>, <span class="st">&#39;minimum_nights&#39;</span>, <span class="st">&#39;maximum_nights&#39;</span>, <span class="st">&#39;number_of_reviews&#39;</span>, <span class="st">&#39;number_of_reviews_ltm&#39;</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;number_of_reviews_l30d&#39;</span>, <span class="st">&#39;review_scores_rating&#39;</span>, <span class="st">&#39;review_scores_accuracy&#39;</span>, <span class="st">&#39;review_scores_cleanliness&#39;</span>, </span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;review_scores_checkin&#39;</span>, <span class="st">&#39;review_scores_communication&#39;</span>, <span class="st">&#39;review_scores_location&#39;</span>, <span class="st">&#39;review_scores_value&#39;</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="56">
+
+  <div id="df-cae9bc13-5be0-46e8-907e-b5be2e3f2000">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>neighbourhood</th>
+      <th>neighbourhood_cleansed</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>property_type</th>
+      <th>room_type</th>
+      <th>accommodates</th>
+      <th>bathrooms</th>
+      <th>bedrooms</th>
+      <th>beds</th>
+      <th>...</th>
+      <th>number_of_reviews</th>
+      <th>number_of_reviews_ltm</th>
+      <th>number_of_reviews_l30d</th>
+      <th>review_scores_rating</th>
+      <th>review_scores_accuracy</th>
+      <th>review_scores_cleanliness</th>
+      <th>review_scores_checkin</th>
+      <th>review_scores_communication</th>
+      <th>review_scores_location</th>
+      <th>review_scores_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Kailua, Hawaii, United States</td>
+      <td>North Kona</td>
+      <td>19.62768</td>
+      <td>-155.98543</td>
+      <td>Entire townhouse</td>
+      <td>Entire home/apt</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>4.50</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Holualoa, Hawaii, United States</td>
+      <td>North Kona</td>
+      <td>19.66220</td>
+      <td>-155.95681</td>
+      <td>Private room in yurt</td>
+      <td>Private room</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>194</td>
+      <td>96</td>
+      <td>3</td>
+      <td>4.41</td>
+      <td>4.46</td>
+      <td>4.40</td>
+      <td>4.65</td>
+      <td>4.61</td>
+      <td>4.66</td>
+      <td>4.49</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Lahaina, Hawaii, United States</td>
+      <td>Lahaina</td>
+      <td>20.91764</td>
+      <td>-156.68840</td>
+      <td>Entire guest suite</td>
+      <td>Entire home/apt</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>70</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5.00</td>
+      <td>4.97</td>
+      <td>4.99</td>
+      <td>4.99</td>
+      <td>5.00</td>
+      <td>4.99</td>
+      <td>4.93</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+      <td>North Shore Oahu</td>
+      <td>21.58206</td>
+      <td>-158.14168</td>
+      <td>Private room in home</td>
+      <td>Private room</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.88</td>
+      <td>4.75</td>
+      <td>4.88</td>
+      <td>4.88</td>
+      <td>4.88</td>
+      <td>5.00</td>
+      <td>4.88</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NaN</td>
+      <td>Koloa-Poipu</td>
+      <td>21.90589</td>
+      <td>-159.46809</td>
+      <td>Private room in resort</td>
+      <td>Private room</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>28575</th>
+      <td>Puako, Hawaii, United States</td>
+      <td>South Kohala</td>
+      <td>19.96992</td>
+      <td>-155.84321</td>
+      <td>Private room in bungalow</td>
+      <td>Private room</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>32</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4.72</td>
+      <td>4.78</td>
+      <td>4.53</td>
+      <td>4.78</td>
+      <td>4.78</td>
+      <td>4.91</td>
+      <td>4.72</td>
+    </tr>
+    <tr>
+      <th>28576</th>
+      <td>NaN</td>
+      <td>Ewa</td>
+      <td>21.32377</td>
+      <td>-157.97581</td>
+      <td>Private room in home</td>
+      <td>Private room</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>28577</th>
+      <td>Kamuela, Hawaii, United States</td>
+      <td>South Kohala</td>
+      <td>19.96680</td>
+      <td>-155.84840</td>
+      <td>Entire home</td>
+      <td>Entire home/apt</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>...</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>5.00</td>
+      <td>4.38</td>
+    </tr>
+    <tr>
+      <th>28578</th>
+      <td>NaN</td>
+      <td>Koloa-Poipu</td>
+      <td>21.87031</td>
+      <td>-159.44706</td>
+      <td>Entire condo</td>
+      <td>Entire home/apt</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>28579</th>
+      <td>NaN</td>
+      <td>North Shore Kauai</td>
+      <td>22.22897</td>
+      <td>-159.47531</td>
+      <td>Entire condo</td>
+      <td>Entire home/apt</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>28580 rows × 23 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cae9bc13-5be0-46e8-907e-b5be2e3f2000')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-cae9bc13-5be0-46e8-907e-b5be2e3f2000 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-cae9bc13-5be0-46e8-907e-b5be2e3f2000');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="mRSM6HhdVNuQ">
+<p>One example of the analysis can be: what types of listings are available in the area?</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:424,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="P797NomsVNuQ" data-outputId="b8fc050e-5f26-4b37-c39e-616913622175">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and analysis here#</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>type_of_listing_df <span class="op">=</span> listings.groupby(listings[<span class="st">&#39;property_type&#39;</span>])[<span class="st">&#39;id&#39;</span>].count()</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>type_of_listing_df.sort_values(ascending <span class="op">=</span> <span class="va">False</span>).reset_index()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="57">
+
+  <div id="df-0327675b-a982-415f-b8cd-e02e7863a120">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>property_type</th>
+      <th>id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Entire condo</td>
+      <td>14889</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Entire home</td>
+      <td>3288</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Entire rental unit</td>
+      <td>3011</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Private room in resort</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Room in hotel</td>
+      <td>734</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>Ranch</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>Island</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>Private room in minsu</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>Private room in chalet</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>Barn</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>86 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0327675b-a982-415f-b8cd-e02e7863a120')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-0327675b-a982-415f-b8cd-e02e7863a120 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-0327675b-a982-415f-b8cd-e02e7863a120');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell markdown" id="xeBdxFgsJTS0">
+<p>There are 86 listing types in this dataset. Among them the higest 25 types are graphed below.</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:456,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="RX9lfg4mNtY0" data-outputId="fa129590-0d82-4145-85c8-71bc0a58acae">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>type_of_listing_df.sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">25</span>).plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;top 25 listing types&quot;</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/7684443d7dc24fe3cb5303f4d4a16f15a560d333.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="HEkN3GxhVNuR">
+<p>Some ideas on the analysis</p>
+<ul>
+<li>x unique listing in the area in total.</li>
+<li>The first rental in the area was up in x date in x neighborhood.</li>
+<li>x reviews have been written by guests since then.</li>
+<li>The price for a listing ranges from x per night to x per night.</li>
+<li>Listing with &gt;$x price tag are in xx, xx, xx neighborhood</li>
+<li>highest average listing price is in xx neighborhood and lowest average listing price is in xx neighborhood.</li>
+</ul>
+</div>
+<section id="analyze-time-series-trending-in-supply-and-demand" class="cell markdown" id="lSf8SkuxVNuR">
+<h1>Analyze time series trending in supply and demand</h1>
+</section>
+<div class="cell markdown" id="i9eMqc9BVNuR">
+<p>To get the supply in the area, column host_since provides a good estimation on how many new hosts are added each year and month. You may want to get the year and month of this column and plot unique hosts vs. date (year and month).</p>
+</div>
+<div class="cell code" id="nk9H7sz_VNuR">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and analysis here#</span></span></code></pre></div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="5fPecvcfQ3Yz" data-outputId="be1189e9-22f1-4cdd-b7b9-3c8b0e53ce61">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Number of unique host IDs</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;host_id&#39;</span>].nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="59">
+<pre><code>8110</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="VCEVv8TXiU3m" data-outputId="a7df4b73-97b4-4012-bb42-4cf5ef84eef0">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;host_since&#39;</span>].dtype</span></code></pre></div>
+<div class="output execute_result" data-execution_count="60">
+<pre><code>dtype(&#39;O&#39;)</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="L6Pv5hnIQTmk" data-outputId="62374686-c841-47b8-c6cf-a214d0bb4a24">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the year and month of host_since variable</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;host_year&#39;</span>] <span class="op">=</span> listings[<span class="st">&#39;host_since&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;-&#39;</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;host_month&#39;</span>] <span class="op">=</span> listings[<span class="st">&#39;host_since&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;-&#39;</span>).<span class="bu">str</span>[<span class="dv">1</span>]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>listings[[<span class="st">&#39;host_year&#39;</span>, <span class="st">&#39;host_month&#39;</span>]].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="61">
+
+  <div id="df-3d045fbd-f16e-463d-86d0-6744218f3f08">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year</th>
+      <th>host_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019</td>
+      <td>05</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2019</td>
+      <td>05</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2015</td>
+      <td>07</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2015</td>
+      <td>04</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3d045fbd-f16e-463d-86d0-6744218f3f08')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-3d045fbd-f16e-463d-86d0-6744218f3f08 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-3d045fbd-f16e-463d-86d0-6744218f3f08');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" id="7V6ccqN1iwFn">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Combining Year and Month</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;host_year_and_month&#39;</span>] <span class="op">=</span> listings.host_year <span class="op">+</span> <span class="st">&quot;-&quot;</span> <span class="op">+</span> listings.host_month</span></code></pre></div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="IL5-h059lcc0" data-outputId="4aeaa709-623f-45ee-fcdc-6ed4820a6247">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Unique number of host ids for each month of the year from 2008 to 2022</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>time_series <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year_and_month&#39;</span>]).host_id.nunique().reset_index()</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>time_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="63">
+
+  <div id="df-09c23460-71c3-4fd8-847c-fbdcbb7dda08">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>host_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-09c23460-71c3-4fd8-847c-fbdcbb7dda08')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-09c23460-71c3-4fd8-847c-fbdcbb7dda08 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-09c23460-71c3-4fd8-847c-fbdcbb7dda08');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:203,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="7Jq7X8zglUvk" data-outputId="9b7c9627-9ae7-44b1-966f-e6017e6b3e1b">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw Plot</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_df(df, x, y, title<span class="op">=</span><span class="st">&quot;&quot;</span>, xlabel<span class="op">=</span><span class="st">&#39;Date&#39;</span>, ylabel<span class="op">=</span><span class="st">&#39;Value&#39;</span>, dpi<span class="op">=</span><span class="dv">100</span>):</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">30</span>,<span class="dv">5</span>), dpi<span class="op">=</span>dpi)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    plt.plot(x, y, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    plt.xticks(fontsize<span class="op">=</span><span class="dv">8</span>,rotation <span class="op">=</span> <span class="dv">90</span>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    plt.gca().<span class="bu">set</span>(title<span class="op">=</span>title, xlabel<span class="op">=</span>xlabel, ylabel<span class="op">=</span>ylabel)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Line Chart of monthly number of unique host IDs</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>plot_df(time_series, x<span class="op">=</span>time_series.host_year_and_month, y<span class="op">=</span>time_series.host_id)    </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/d875af46de7191923d8462930b7a778c46faa26c.png" /></p>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="41aBVOoaLQO1" data-outputId="caf01887-11b8-42c2-fc67-8b4255d526eb">
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Unique number of host ids for each month of the year from 2008 to 2022</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>time_series <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year_and_month&#39;</span>]).host_id.nunique().reset_index()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>time_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="65">
+
+  <div id="df-a83f0afb-0c7d-443d-a3f1-bddece9bdb4f">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>host_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a83f0afb-0c7d-443d-a3f1-bddece9bdb4f')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-a83f0afb-0c7d-443d-a3f1-bddece9bdb4f button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-a83f0afb-0c7d-443d-a3f1-bddece9bdb4f');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="SAsBi8RDoH-1" data-outputId="0c76fb3f-6b95-4268-b0b3-c57c9ec122f7">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>time_series_year <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year&#39;</span>]).host_id.nunique().reset_index()</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>time_series_year.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="66">
+
+  <div id="df-2797702a-bfc8-40fb-8e5e-e06ea772f24c">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year</th>
+      <th>host_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2009</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2010</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2012</td>
+      <td>367</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2797702a-bfc8-40fb-8e5e-e06ea772f24c')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-2797702a-bfc8-40fb-8e5e-e06ea772f24c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-2797702a-bfc8-40fb-8e5e-e06ea772f24c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:197,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="BnZQXKN_nlXa" data-outputId="aa5a40f7-baea-414b-dcfa-3cc3d9dcf4ab">
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Yearly View of unique host IDs</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>plot_df(time_series_year, x<span class="op">=</span>time_series_year.host_year, y<span class="op">=</span>time_series_year.host_id)  </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/3da8ae883307be4d20bc410ec505e44711452d3e.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Fq-KHwhmVNuS">
+<p>To get the demand in the area, notice that the data on the number of booking made on Airbnb over the years is not available and is probably confidential information. Instead, use ‘number of reviews’ as a proxy for the demand for Airbnb rentals. As per the company, about 50% of the guests review the hosts/listings, hence studying the number of reviews will give us a good estimation of the demand. Plot unique reviews vs data (year and month).</p>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:424,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="JRXKXrsJrN1X" data-outputId="6985545f-2b81-4d09-d5b7-bb2ca869a5fe">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#get the year and month for number of unique reviews </span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>time_series_reviews <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year_and_month&#39;</span>]).number_of_reviews.nunique().reset_index()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>time_series_reviews</span></code></pre></div>
+<div class="output execute_result" data-execution_count="70">
+
+  <div id="df-e25eec6a-c106-42b2-b133-3f935fbc9971">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>number_of_reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>2022-05</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>2022-06</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>2022-07</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>2022-08</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>2022-09</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>166 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e25eec6a-c106-42b2-b133-3f935fbc9971')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-e25eec6a-c106-42b2-b133-3f935fbc9971 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-e25eec6a-c106-42b2-b133-3f935fbc9971');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:203,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="-j2_25KgrOA4" data-outputId="caec8214-fad3-44f1-8f92-87f8c10b69fb">
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Monthly view for the number of unique reviews </span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>plot_df(time_series_reviews, x<span class="op">=</span>time_series_reviews.host_year_and_month, y<span class="op">=</span>time_series_reviews.number_of_reviews)  </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/12f3a4dc48d176aa6032d9d35268cbf66d189963.png" /></p>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:520,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="nx3xVsgnpZ_C" data-outputId="cf484d18-f67c-4220-ef9c-5933858a859c">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>time_series_reviews2 <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year&#39;</span>]).number_of_reviews.nunique().reset_index()</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>time_series_reviews2</span></code></pre></div>
+<div class="output execute_result" data-execution_count="72">
+
+  <div id="df-9a1c6644-0b36-4968-98a6-3df9992cd036">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year</th>
+      <th>number_of_reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2009</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2010</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2011</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2012</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2013</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2014</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2015</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2016</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2017</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2018</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2019</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2020</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2021</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2022</td>
+      <td>47</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9a1c6644-0b36-4968-98a6-3df9992cd036')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-9a1c6644-0b36-4968-98a6-3df9992cd036 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-9a1c6644-0b36-4968-98a6-3df9992cd036');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:196,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="41Wxglt4q0PQ" data-outputId="6217f8ec-ef4a-4af7-982a-569fe997c3ae">
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Yearly View for th number of reviews</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>plot_df(time_series_reviews2, x<span class="op">=</span>time_series_reviews2.host_year, y<span class="op">=</span>time_series_reviews2.number_of_reviews)  </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/3ce5e28e5de90358a17722501f06db4afc817bde.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="kQFWbh9MVNuS">
+<p>What do you see in supply and demand? Do you think it is a good time to invest residential real estate for short term rental like Airbnb in this area?</p>
+</div>
+<div class="cell markdown" id="wBM4zCdy99tm">
+<p><strong><em>As it was observed from the time vs unique host ID counts, there has been a gradual increasing trend upto May, 2016. Upto 2020 the trend has been decreasing. Aterwards the trend is up and down and at the present the supply is at its lowest. Therefore as the supply is less the prices could be really high as the demand is also high. Therefore it can not be reccommended to invest for short term at the momemt.</em></strong></p>
+</div>
+<div class="cell code" id="AKRHaF_9x4K_">
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell markdown" id="oDUCBjp5VNuT">
+<p>Do you see seasonality in the supply and demand analysis? Is there a better time to start hosting (when demand is higher than supply)? How does number of reviews change across months in each year?</p>
+<p>plot number of reviews vs. month for each year.</p>
+</div>
+<div class="cell markdown" id="3SY2mWVESA01">
+<p><strong><em>The two line charts as requested in the question are plotted in the previous section. The graps showed a seasonal pattern in the number of reviews (demand). Therefore again number of reviews were plotted against the month as below to observe the month on month count. According to that May has the highest demand while October has the second highest demand. November demand is lowest and should not start hosting in November. Therefore October and May are recommended for hosting.</em></strong></p>
+</div>
+<div class="cell code" id="J9h96_C1B80S">
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code" id="St44bC-tB5nG">
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell code" id="pfqGaN1xVNuT">
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and plot here</span></span></code></pre></div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:426,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="90Y8Al5Lx9Ob" data-outputId="e58302df-635b-4765-b85a-b8041bee8389">
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Monthly number of reviews</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>time_series_reviews3 <span class="op">=</span> listings.groupby([<span class="st">&#39;host_month&#39;</span>]).number_of_reviews.count().reset_index()</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>time_series_reviews3</span></code></pre></div>
+<div class="output execute_result" data-execution_count="74">
+
+  <div id="df-77adce7b-c368-494f-a9ac-07c65f1151e5">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_month</th>
+      <th>number_of_reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>01</td>
+      <td>2487</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>02</td>
+      <td>2235</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>03</td>
+      <td>2521</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>04</td>
+      <td>2187</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>05</td>
+      <td>2988</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>06</td>
+      <td>2078</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>07</td>
+      <td>2462</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>08</td>
+      <td>2633</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>09</td>
+      <td>2148</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>2750</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>1673</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>2284</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-77adce7b-c368-494f-a9ac-07c65f1151e5')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-77adce7b-c368-494f-a9ac-07c65f1151e5 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-77adce7b-c368-494f-a9ac-07c65f1151e5');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:189,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="NEMYqN2dyL0X" data-outputId="d02af745-8bf8-490c-e83e-d1ddcd22b2ef">
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot the month vs revies</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plot_df(time_series_reviews3, x<span class="op">=</span>time_series_reviews3.host_month, y<span class="op">=</span>time_series_reviews3.number_of_reviews)  </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/4c4f5bfd838330bc3166a01e725ede03cb92defb.png" /></p>
+</div>
+</div>
+<div class="cell code" id="Ue-ar9YE-Qg3">
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>months_in_order <span class="op">=</span> [<span class="st">&#39;Jan&#39;</span>, <span class="st">&#39;Feb&#39;</span>, <span class="st">&#39;Mar&#39;</span>, <span class="st">&#39;Apr&#39;</span>, <span class="st">&#39;May&#39;</span>, <span class="st">&#39;Jun&#39;</span>, <span class="st">&#39;Jul&#39;</span>, <span class="st">&#39;Aug&#39;</span>, <span class="st">&#39;Sep&#39;</span>, <span class="st">&#39;Oct&#39;</span>, <span class="st">&#39;Nov&#39;</span>, <span class="st">&#39;Dec&#39;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="VFDGmY7K-ShX" data-outputId="a10ef593-9413-4387-d534-d5a435f7d104">
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#First five rows of monthly number of reviews table</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>time_series_reviews.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="77">
+
+  <div id="df-4b339fcc-cc54-440a-be2b-46a3ce54b755">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>number_of_reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4b339fcc-cc54-440a-be2b-46a3ce54b755')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-4b339fcc-cc54-440a-be2b-46a3ce54b755 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-4b339fcc-cc54-440a-be2b-46a3ce54b755');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="dE-7Z6ouEZa-" data-outputId="3caa9c5b-7068-49cc-c7b1-922b26e2799b">
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Extracting the year and month from above table</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>time_series_reviews[<span class="st">&#39;host_year&#39;</span>] <span class="op">=</span> time_series_reviews[<span class="st">&#39;host_year_and_month&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;-&#39;</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>time_series_reviews[<span class="st">&#39;host_month&#39;</span>] <span class="op">=</span> time_series_reviews[<span class="st">&#39;host_year_and_month&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;-&#39;</span>).<span class="bu">str</span>[<span class="dv">1</span>]</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>time_series_reviews.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="78">
+
+  <div id="df-9932088b-41b5-4edc-ad15-5158507ef862">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>number_of_reviews</th>
+      <th>host_year</th>
+      <th>host_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>14</td>
+      <td>2008</td>
+      <td>07</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>1</td>
+      <td>2008</td>
+      <td>09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>1</td>
+      <td>2008</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>27</td>
+      <td>2009</td>
+      <td>02</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>5</td>
+      <td>2009</td>
+      <td>03</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9932088b-41b5-4edc-ad15-5158507ef862')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-9932088b-41b5-4edc-ad15-5158507ef862 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-9932088b-41b5-4edc-ad15-5158507ef862');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:457,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="8JmwwiZr3LxY" data-outputId="1268763a-1069-42c2-aef3-59ce282c1d38">
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating a pivot plot host month, host yeast vs number of reviews</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>df_pivoted <span class="op">=</span> time_series_reviews.pivot(index<span class="op">=</span><span class="st">&#39;host_month&#39;</span>, </span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>                            columns<span class="op">=</span><span class="st">&#39;host_year&#39;</span>, </span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>                            values<span class="op">=</span><span class="st">&#39;number_of_reviews&#39;</span>)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>df_pivoted</span></code></pre></div>
+<div class="output execute_result" data-execution_count="79">
+
+  <div id="df-bb287426-6e70-426d-9a18-e2cb81689d9c">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>host_year</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>2021</th>
+      <th>2022</th>
+    </tr>
+    <tr>
+      <th>host_month</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>01</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>14.0</td>
+      <td>19.0</td>
+      <td>39.0</td>
+      <td>51.0</td>
+      <td>108.0</td>
+      <td>103.0</td>
+      <td>125.0</td>
+      <td>108.0</td>
+      <td>81.0</td>
+      <td>55.0</td>
+      <td>38.0</td>
+      <td>50.0</td>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <th>02</th>
+      <td>NaN</td>
+      <td>27.0</td>
+      <td>20.0</td>
+      <td>22.0</td>
+      <td>31.0</td>
+      <td>55.0</td>
+      <td>88.0</td>
+      <td>132.0</td>
+      <td>141.0</td>
+      <td>90.0</td>
+      <td>63.0</td>
+      <td>62.0</td>
+      <td>30.0</td>
+      <td>36.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>03</th>
+      <td>NaN</td>
+      <td>5.0</td>
+      <td>9.0</td>
+      <td>20.0</td>
+      <td>42.0</td>
+      <td>64.0</td>
+      <td>86.0</td>
+      <td>89.0</td>
+      <td>112.0</td>
+      <td>101.0</td>
+      <td>76.0</td>
+      <td>67.0</td>
+      <td>34.0</td>
+      <td>55.0</td>
+      <td>27.0</td>
+    </tr>
+    <tr>
+      <th>04</th>
+      <td>NaN</td>
+      <td>20.0</td>
+      <td>9.0</td>
+      <td>25.0</td>
+      <td>58.0</td>
+      <td>111.0</td>
+      <td>96.0</td>
+      <td>98.0</td>
+      <td>119.0</td>
+      <td>90.0</td>
+      <td>70.0</td>
+      <td>57.0</td>
+      <td>8.0</td>
+      <td>50.0</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>05</th>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>79.0</td>
+      <td>57.0</td>
+      <td>104.0</td>
+      <td>90.0</td>
+      <td>116.0</td>
+      <td>91.0</td>
+      <td>66.0</td>
+      <td>66.0</td>
+      <td>33.0</td>
+      <td>55.0</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>06</th>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>79.0</td>
+      <td>53.0</td>
+      <td>62.0</td>
+      <td>94.0</td>
+      <td>98.0</td>
+      <td>106.0</td>
+      <td>93.0</td>
+      <td>77.0</td>
+      <td>39.0</td>
+      <td>43.0</td>
+      <td>37.0</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>07</th>
+      <td>14.0</td>
+      <td>NaN</td>
+      <td>18.0</td>
+      <td>16.0</td>
+      <td>45.0</td>
+      <td>78.0</td>
+      <td>89.0</td>
+      <td>94.0</td>
+      <td>110.0</td>
+      <td>86.0</td>
+      <td>73.0</td>
+      <td>44.0</td>
+      <td>31.0</td>
+      <td>42.0</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>08</th>
+      <td>NaN</td>
+      <td>4.0</td>
+      <td>10.0</td>
+      <td>48.0</td>
+      <td>99.0</td>
+      <td>62.0</td>
+      <td>82.0</td>
+      <td>138.0</td>
+      <td>106.0</td>
+      <td>87.0</td>
+      <td>69.0</td>
+      <td>45.0</td>
+      <td>29.0</td>
+      <td>38.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>09</th>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>18.0</td>
+      <td>46.0</td>
+      <td>36.0</td>
+      <td>66.0</td>
+      <td>70.0</td>
+      <td>133.0</td>
+      <td>96.0</td>
+      <td>84.0</td>
+      <td>66.0</td>
+      <td>55.0</td>
+      <td>26.0</td>
+      <td>23.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>NaN</td>
+      <td>12.0</td>
+      <td>9.0</td>
+      <td>41.0</td>
+      <td>45.0</td>
+      <td>77.0</td>
+      <td>86.0</td>
+      <td>98.0</td>
+      <td>92.0</td>
+      <td>92.0</td>
+      <td>63.0</td>
+      <td>64.0</td>
+      <td>47.0</td>
+      <td>32.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>NaN</td>
+      <td>37.0</td>
+      <td>23.0</td>
+      <td>41.0</td>
+      <td>49.0</td>
+      <td>59.0</td>
+      <td>72.0</td>
+      <td>98.0</td>
+      <td>70.0</td>
+      <td>59.0</td>
+      <td>78.0</td>
+      <td>41.0</td>
+      <td>45.0</td>
+      <td>33.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1.0</td>
+      <td>12.0</td>
+      <td>5.0</td>
+      <td>29.0</td>
+      <td>39.0</td>
+      <td>86.0</td>
+      <td>67.0</td>
+      <td>111.0</td>
+      <td>82.0</td>
+      <td>75.0</td>
+      <td>50.0</td>
+      <td>47.0</td>
+      <td>34.0</td>
+      <td>30.0</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bb287426-6e70-426d-9a18-e2cb81689d9c')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-bb287426-6e70-426d-9a18-e2cb81689d9c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-bb287426-6e70-426d-9a18-e2cb81689d9c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:602,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="DA7bywe_22WE" data-outputId="bda30261-fbaf-47af-ea92-3d2ec2722776">
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>df_pivoted.plot(kind<span class="op">=</span><span class="st">&#39;line&#39;</span>, figsize<span class="op">=</span>(<span class="dv">17</span>, <span class="dv">10</span>))</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Number of reviews: Month by Month Comaprison&quot;</span>, y<span class="op">=</span><span class="fl">1.013</span>, fontsize<span class="op">=</span><span class="dv">22</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Month&quot;</span>, labelpad<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Number of Review Count&quot;</span>, labelpad<span class="op">=</span><span class="dv">16</span>)<span class="op">;</span>   </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/10fa09fe3f274ad753cfccf94d0ca67e4b3b9301.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="1WNf2_s_VNuT">
+<p>How about average nightly rent? does it show change over the years and seasonality?</p>
+</div>
+<div class="cell markdown" id="xNEfqIDLS90N">
+<p>Answer:</p>
+</div>
+<div class="cell code" id="Dx51ud6rVNuT">
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and plot here</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="vEXAick0HJQG">
+<p><strong><em>The average nightly rent is about $476 according to the dataset. A line chart was plotted to show the average monthly rate vs month. The graph has a irreguar pattern and does not include a trend. In 2021 October a huge sudden growth is observed. Might be due to some outlieres in that month, as the next month has just an average range. Another peak is observed in April, 2018. However the patterns are different year to year therefore can not specifiacally point out seasonal behavior.</em></strong></p>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="bmy0DB0MORyT" data-outputId="92b908c3-3e35-4ae8-9ab2-84b5b2a607e6">
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#The values in price columns included with $ mark therefore we need to remove them.</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;price&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="82">
+<pre><code>0          $175.00
+1           $83.00
+2          $622.00
+3           $70.00
+4          $206.00
+           ...    
+28575      $300.00
+28576       $55.00
+28577    $2,300.00
+28578      $999.00
+28579      $425.00
+Name: price, Length: 28580, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="1lxgyYnUO110" data-outputId="d8afa111-4c6b-4a66-a002-bae77e0152e5">
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Removing the $ symbol and  converting into float data type.</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;price&#39;</span>] <span class="op">=</span> listings[<span class="st">&#39;price&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&#39;[$, ]&#39;</span>, <span class="st">&#39;&#39;</span>).astype(<span class="bu">float</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: FutureWarning: The default value of regex will change from True to False in a future version.
+  
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="1wxBDuS-PGay" data-outputId="0cf2f3ec-52ea-471e-c21a-cbd92df396f6">
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#First 5 rows of price ($ removed)</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;price&#39;</span>].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="84">
+<pre><code>0    175.0
+1     83.0
+2    622.0
+3     70.0
+4    206.0
+Name: price, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="CVonmvqEPN8n" data-outputId="745d3d2c-f31e-4306-a38c-9412d9700b29">
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Average Price</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>listings[<span class="st">&#39;price&#39;</span>].mean()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="85">
+<pre><code>476.1075577326802</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="EkoqawqZPTUW" data-outputId="1adc423b-25c7-45b2-900a-3a10af1d179d">
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Yearly Average Price</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>yearly_avg_price <span class="op">=</span> listings.groupby(<span class="st">&#39;host_year&#39;</span>)[<span class="st">&#39;price&#39;</span>].mean()</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>yearly_avg_price</span></code></pre></div>
+<div class="output execute_result" data-execution_count="86">
+<pre><code>host_year
+2008     766.400000
+2009     280.828571
+2010     287.060440
+2011     619.852978
+2012     314.863229
+2013     545.652084
+2014     365.040593
+2015     452.049553
+2016     475.278613
+2017     430.828709
+2018     512.635662
+2019     421.274272
+2020     325.493066
+2021    1108.717742
+2022     338.502591
+Name: price, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:312,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="-iHOhZGEyxMB" data-outputId="be77e4aa-f8a0-4d08-c7d9-5b18610498c7">
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>yearly_avg_price.plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Yearly Average Price&quot;</span>)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/ade737de2e1f065f50a2002ad8845cb0df91a75f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="euLJCPJtbJA_" data-outputId="f4518678-9569-43c2-a690-3687c355dd36">
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Monthly average price</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>time_series_price <span class="op">=</span> listings.groupby([<span class="st">&#39;host_year_and_month&#39;</span>]).price.mean().reset_index()</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>time_series_price.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="88">
+
+  <div id="df-1908c17c-cea8-45e6-9d9f-2a0f6ebc4842">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host_year_and_month</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2008-07</td>
+      <td>829.944444</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2008-09</td>
+      <td>264.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008-12</td>
+      <td>125.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009-02</td>
+      <td>207.193548</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2009-03</td>
+      <td>152.800000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1908c17c-cea8-45e6-9d9f-2a0f6ebc4842')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1908c17c-cea8-45e6-9d9f-2a0f6ebc4842 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1908c17c-cea8-45e6-9d9f-2a0f6ebc4842');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;height&quot;:202,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="32UR3DZOdq1_" data-outputId="8d5c1d38-feb0-4e04-bc21-2b332b3f40b9">
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>plot_df(time_series_price, x<span class="op">=</span>time_series_price.host_year_and_month, y<span class="op">=</span>time_series_price.price)  </span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/bd385d33c0e1465cd4aa2cc835cc39675294319b.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Q5LEaQIXVNuT">
+<p>Analyze the data to answer the question: if average prices on certain days were higher compared to the other days. To be more specific, if it is more expensive to travel on weekends?</p>
+<p>Plot a box plot of average prices by day of the week to understand this phenomenon.</p>
+</div>
+<div class="cell code" id="CPlYhuA4VNuT">
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># your code and plot here</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="6" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="e9rej4hJRUwO" data-outputId="6cb49341-c8e9-403b-b3a2-c36c8d2a8a1b">
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co">#first 5 rows of the calender dataset</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>calendar.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+
+  <div id="df-349ff87c-4c8c-42c2-8de5-7d20c939e58a">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>listing_id</th>
+      <th>date</th>
+      <th>available</th>
+      <th>price</th>
+      <th>adjusted_price</th>
+      <th>minimum_nights</th>
+      <th>maximum_nights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35066424</td>
+      <td>2022-09-13</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>35066424</td>
+      <td>2022-09-14</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>35066424</td>
+      <td>2022-09-15</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>35066424</td>
+      <td>2022-09-16</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>35066424</td>
+      <td>2022-09-17</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-349ff87c-4c8c-42c2-8de5-7d20c939e58a')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-349ff87c-4c8c-42c2-8de5-7d20c939e58a button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-349ff87c-4c8c-42c2-8de5-7d20c939e58a');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="7" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="V_k3LTfUZwU4" data-outputId="df042a37-04c8-491c-d64c-f1170ebc59d0">
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>calendar.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<pre><code>(10431371, 7)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="zC8PfFSDjU3V">
+<p>The dataset doesnot contain a weekday variable, therefore we need to extract weekday from the date variable.</p>
+</div>
+<div class="cell code" id="KDLsPbHbSgCN">
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co">#modify the calendar dataframe to add new column for month and weekday for that particular date</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="8" id="u6Bkze1eTx-6">
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co">#run with a limit as high power is required to run full.</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="co">#calendar_small = calendar.copy()</span></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>calendar_small <span class="op">=</span> calendar.head(<span class="dv">1000000</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="9" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="zLR7kWoUSHl3" data-outputId="e74313a8-ee40-4f7a-9606-b66d1c74243d">
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co">#modify the calendar dataframe to add new column for month and weekday for that particular date</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="co">#this will take more than 7mins</span></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>calendar_small[<span class="st">&#39;weekday&#39;</span>] <span class="op">=</span> [datetime.strptime(calendar_small.iloc[i,<span class="dv">1</span>],<span class="st">&#39;%Y-%m-</span><span class="sc">%d</span><span class="st">&#39;</span>).weekday() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(calendar_small.iloc[:]))] </span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  after removing the cwd from sys.path.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="10" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="t0H7o282T9Q9" data-outputId="69e98dc8-402d-45ca-d273-ae9415bdc157">
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>calendar_small.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+
+  <div id="df-8bce2d23-e945-4efe-b89b-0207c6a55ec0">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>listing_id</th>
+      <th>date</th>
+      <th>available</th>
+      <th>price</th>
+      <th>adjusted_price</th>
+      <th>minimum_nights</th>
+      <th>maximum_nights</th>
+      <th>weekday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35066424</td>
+      <td>2022-09-13</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>35066424</td>
+      <td>2022-09-14</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>35066424</td>
+      <td>2022-09-15</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>35066424</td>
+      <td>2022-09-16</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>35066424</td>
+      <td>2022-09-17</td>
+      <td>f</td>
+      <td>$175.00</td>
+      <td>$175.00</td>
+      <td>30.0</td>
+      <td>365.0</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8bce2d23-e945-4efe-b89b-0207c6a55ec0')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8bce2d23-e945-4efe-b89b-0207c6a55ec0 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8bce2d23-e945-4efe-b89b-0207c6a55ec0');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="11" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="YAGm5430UFX3" data-outputId="64edbba0-01e6-4a49-b7be-d96bae64d775">
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>calendar_small[<span class="st">&#39;weekday&#39;</span>].nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+<pre><code>7</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="12" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="i9Bi21cNU6nA" data-outputId="dcb1e7d7-8a5f-4d2f-ab7d-9b7d8e0bd228">
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Remove the $ mark in price and converting to float type.</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>calendar_small[<span class="st">&#39;price&#39;</span>] <span class="op">=</span> calendar_small[<span class="st">&#39;price&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&#39;[$, ]&#39;</span>, <span class="st">&#39;&#39;</span>).astype(<span class="bu">float</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: FutureWarning: The default value of regex will change from True to False in a future version.
+  
+/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="13" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="eJuuMuyfWkDw" data-outputId="5ca38da2-681f-472b-bc6a-c3a3a6b2df25">
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>calendar_small[<span class="st">&#39;weekday&#39;</span>] <span class="op">=</span> calendar_small[<span class="st">&#39;weekday&#39;</span>].<span class="bu">map</span>({<span class="dv">0</span>: <span class="st">&#39;Monday&#39;</span>,</span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">1</span>: <span class="st">&#39;Tuesday&#39;</span>,</span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">2</span>: <span class="st">&#39;Wedensday&#39;</span>, </span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">3</span>: <span class="st">&#39;Thursday&#39;</span>, </span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">4</span>: <span class="st">&#39;Friday&#39;</span>, </span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">6</span>: <span class="st">&#39;Saturday&#39;</span>,</span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>                                                           <span class="dv">6</span>: <span class="st">&#39;Sunday&#39;</span>,</span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>                                                           })</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  import sys
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="14" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="z3H3hkxBXS9B" data-outputId="b05af7db-4186-4844-b09d-74c887fb1970">
+<div class="sourceCode" id="cb72"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>calendar_small[<span class="st">&#39;weekday&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<pre><code>0           Tuesday
+1         Wedensday
+2          Thursday
+3            Friday
+4               NaN
+            ...    
+999995       Sunday
+999996       Monday
+999997      Tuesday
+999998    Wedensday
+999999     Thursday
+Name: weekday, Length: 1000000, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="15" id="rsFT-7LwUOAm">
+<div class="sourceCode" id="cb74"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>weekly_avg_price <span class="op">=</span> calendar_small.groupby(<span class="st">&#39;weekday&#39;</span>)[<span class="st">&#39;price&#39;</span>].mean()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="16" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="E2fhNIbMaEeI" data-outputId="eee9bf5f-cd18-4653-9167-a290b909181b">
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>weekly_avg_price</span></code></pre></div>
+<div class="output execute_result" data-execution_count="16">
+<pre><code>weekday
+Friday       410.732376
+Monday       407.452292
+Sunday       408.879472
+Thursday     408.064745
+Tuesday      407.267835
+Wedensday    407.401222
+Name: price, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="17" data-colab="{&quot;height&quot;:343,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="ybofv1wcSr6n" data-outputId="ac1e8dd4-5607-4188-d960-fb89dcdee8fa">
+<div class="sourceCode" id="cb77"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>weekly_avg_price.plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>)</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;weekly_avg_price&quot;</span>)</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/9402e68b15a4602936a98a03ac9ca4030351fb1f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="18" data-colab="{&quot;height&quot;:206,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="N0181OFOlsHw" data-outputId="b57aa0d7-d5ad-4f75-ec64-672791d9f3c9">
+<div class="sourceCode" id="cb78"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>weekly_avg_price1 <span class="op">=</span> calendar_small.groupby(<span class="st">&#39;weekday&#39;</span>)[<span class="st">&#39;price&#39;</span>].mean().reset_index()</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>weekly_avg_price1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+
+  <div id="df-34ca8c30-4355-48d7-b27c-03bfe49c83b9">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>weekday</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Friday</td>
+      <td>410.732376</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Monday</td>
+      <td>407.452292</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Sunday</td>
+      <td>408.879472</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Thursday</td>
+      <td>408.064745</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Tuesday</td>
+      <td>407.267835</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-34ca8c30-4355-48d7-b27c-03bfe49c83b9')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-34ca8c30-4355-48d7-b27c-03bfe49c83b9 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-34ca8c30-4355-48d7-b27c-03bfe49c83b9');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="19" data-colab="{&quot;height&quot;:332,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="dZSU1taSdAet" data-outputId="04eb879a-bb03-4970-9406-2fa779e96c55">
+<div class="sourceCode" id="cb79"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>order <span class="op">=</span> [<span class="st">&#39;Monday&#39;</span>, <span class="st">&#39;Tuesday&#39;</span>, <span class="st">&#39;Wednesday&#39;</span>, <span class="st">&#39;Thursday&#39;</span>, <span class="st">&#39;Friday&#39;</span>, <span class="st">&#39;Saturday&#39;</span>, <span class="st">&#39;Sunday&#39;</span>]</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;weekday&quot;</span>, y<span class="op">=</span><span class="st">&quot;price&quot;</span>, data<span class="op">=</span>calendar_small, order<span class="op">=</span>order)</span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Weekday vs Price&quot;</span>)</span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a>plt.xticks(fontsize<span class="op">=</span><span class="dv">8</span>,rotation <span class="op">=</span> <span class="dv">90</span>)</span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_f319f74912074722aea6edf854719dd1/7d8119612765385f3a382efe853932c64ee1fab7.png" /></p>
+</div>
+</div>
+</body>
+</html>
